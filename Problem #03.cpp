@@ -1,4 +1,5 @@
-#include<iostream>
+//it is the same in prop2 the deff is i put the sum ofeach row at 3x3  1 dimention array to store it
+ #include<iostream>
 #include<cstdlib>
 #include<iomanip>
 const int row = 3,colm=3;

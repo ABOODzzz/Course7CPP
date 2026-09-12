@@ -83,7 +83,7 @@ void PrintMatrix(int array[row][colm], string message) {
 
 bool IsPalindrome(int matrix[row][colm]) {
 	for (int i = 0;i<row;i++) {
-		for (int j = 0; j < colm; j++) {
+		for (int j = 0; j < colm/2; j++) {
 			if (matrix[i][j] != matrix[i][colm - 1 - j]) return false;
 
 		}

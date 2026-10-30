@@ -22,11 +22,11 @@ vector<string> SplitString(string S1, string Delim)
 {
 	vector<string> vString;
 	short pos = 0;
-	string sWord; // define a string variable
-	// use find() function to get the position of the delimiters
+	string sWord;
+	
 	while ((pos = S1.find(Delim)) != std::string::npos)
 	{
-		sWord = S1.substr(0, pos); // store the word
+		sWord = S1.substr(0, pos);
 		if (sWord != "")
 		{
 			vString.push_back(sWord);
@@ -35,7 +35,7 @@ vector<string> SplitString(string S1, string Delim)
 	}
 	if (S1 != "")
 	{
-		vString.push_back(S1); // it adds last word of the string.
+		vString.push_back(S1);
 	}
 	return vString;
 }
